@@ -4,12 +4,98 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+   
   </head>
 
   <body>
+
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Git Documentation</header>
+        <a class="nav-link" href="#introduction">Introduction</a>
+        <a class="nav-link" href="#most_used_commands">Most used commands</a>
+        <a class="nav-link" href="#github">GitHub</a>
+        <a class="nav-link" href="#recap">Recap</a>
+        <a class="nav-link" href="#reference">Reference</a>
+      </nav>
+        <section class="main-section" id="introduction">
+                      <header>Introduction   </header>
+      <p>Git is a distributed version control system, which means that a local clone of the project is a complete version control repository. These fully functional local repositories make it easy to work offline or remotely. Developers commit their work locally, and then sync their copy of the repository with the copy on the server. This paradigm differs from centralized version control where clients must synchronize code with a server before creating new versions of code.</p>
+      <p>Git's flexibility and popularity make it a great choice for any team. Many developers and college graduates already know how to use Git. Git's user community has created resources to train developers and Git's popularity make it easy to get help when needed. Nearly every development environment has Git support and Git command line tools implemented on every major operating system.</p>
+        </section>
+
+        <section class="main-section" id="most_used_commands">
+              <header>Most used commands</header>
+                              <li>Git Clone</li>
+                              <li>Git Branch</li>
+                              <li>Git checkout</li>
+                              <li>Git status</li>
+                              <li>Git add</li>
+                              <li>Git commit</li>
+                              <li>Git push</li>
+                              <li>Git pull</li>
+                              <li>Git revert</li>
+                              <li>Git merge</li>
+      <h5 id="gclone">Git Clone</h5>
+        <p>Git clone is a command for downloading existing source code from a remote repository (like Github, for example). In other words, Git clone basically makes an identical copy of the latest version of a project in a repository and saves it to your computer.</p>
+                      <code>git clone https://name-of-the-repository-link </code>
+
+      <h5 id="gbranch">Git Branch</h5>
+        <p>Branches are highly important in the git world. By using branches, several developers are able to work in parallel on the same project simultaneously. We can use the git branch command for creating, listing and deleting branches.</p>
+            <h6>Creating a branch:</h6>
+                      <code>git branch branch-name</code>
+            <h6>Viewing branches:</h6>
+            <code>git branch or git branch --list</code>
+            <h6>Deleting a branch:</h6>
+            <code>git branch -d branch-name</code>
+            <h5 id="gcheckout">Git checkout</h5>
+        <p>This is also one of the most used Git commands. To work in a branch, first you need to switch to it. We use git checkout mostly for switching from one branch to another. We can also use it for checking out files and commits.</p>
+            <code>git checkout name-of-your-branch</code>
+            <h5 id="gstatus">Git status</h5>
+        <p>The Git status command gives us all the necessary information about the current branch.</p>
+            <code>git status</code>
+      <h5 id="gadd">Git add</h5>
+        <p>When we create, modify or delete a file, these changes will happen in our local and won't be included in the next commit (unless we change the configurations).</p>
+            <code>git add file</code>
+            <h5 id="gcommit">Git commit</h5>
+        <p>This is maybe the most-used command of Git. Once we reach a certain point in development, we want to save our changes (maybe after a specific task or issue).</p>
+            <code>git commit -m "commit message"</code>
+            <h5 id="gpush">Git push</h5>
+        <p>After committing your changes, the next thing you want to do is send your changes to the remote server. Git push uploads your commits to the remote repository.</p>
+            <code>git push remote branch-name or git push -u origin branch_name</code>
+            <h5 id="gpull">Git pull</h5>
+        <p>The git pull command is used to get updates from the remote repo. This command is a combination of git fetch and git merge which means that, when we use git pull, it gets the updates from remote repository (git fetch) and immediately applies the latest changes in your local (git merge).</p>
+            <code>git pull remote</code>
+            <h5 id="grevert">Git revert</h5>
+        <p>Sometimes we need to undo the changes that we've made. There are various ways to undo our changes locally or remotely (depends on what we need), but we must carefully use these commands to avoid unwanted deletions.</p>
+            <code>git revert 3321844</code>
+            <h5 id="gmerge">Git merge</h5>
+        <p>When you've completed development in your branch and everything works fine, the final step is merging the branch with the parent branch (dev or master). This is done with the git merge command.</p>
+            <code>git merge branch-name</code>
+  </section>
+
+   <section class="main-section" id="github">
+            <header >GitHub</header>
+      <p>GitHub is an increasingly popular programming resource used for code sharing. It's a social networking site for programmers that many companies and organizations use to facilitate project management and collaboration. According to statistics collected in October 2020, it is the most prominent source code host, with over 60 million new repositories created in 2020 and boasting over 56 million total developers.</p>
+      <p>GitHub is a Git repository hosting service that provides a web-based graphical interface. It is the world’s largest coding community. Putting a code or a project into GitHub brings it increased, widespread exposure. Programmers can find source codes in many different languages and use the command-line interface, Git, to make and keep track of any changes.</p>
+  </section>
+
+   <section class="main-section" id="recap">
+            <header>Recap</header>
+      <p>Simply put, Git is a version control system that lets you manage and keep track of your source code history. GitHub is a cloud-based hosting service that lets you manage Git repositories. If you have open-source projects that use Git, then GitHub is designed to help you better manage them.</p>
+      <p>GitHub helps every team member work together on a project from any location while facilitating collaboration. You can also review previous versions created at an earlier point in time.</p>
+  </section>
+
+   <section class="main-section" id="reference">
+            <header>Reference</header>
+      <p>All the documentation in this page is taken from <a href="https://git-scm.com/doc">scm.</a></p>
+  
+  </section>
+      </main>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <p>Hello World, we are software developers!</p>
     <script  src="js/index.js"></script>
   </body>
 </html>
+
